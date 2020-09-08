@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App =()=> {
+    return (
+        <div> 
+            <h1> My React Apps</h1>
+            <ul>
+                <li><a href="https://michaelwoo921.github.io/pics" >Image Search </a></li>
+                <li><a href="https://michaelwoo921.github.io/videos-hooks" > Video Search</a></li>
+                <li><a href="https://node-react-123.herokuapp.com" >Survey</a></li>
+  <li><a href="https://react-heroku123.herokuapp.com/home" >React specialization from Coursera</a></li>
+                
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+            </ul>
+            <h1> Non React Apps </h1>
+            <ul>
+            <li><a href="https://michaelwoo921.github.io/bootstrap4" >Using Bootstraps </a></li>
+            <li><a href="https://bridge2020.herokuapp.com" >To Do App (password protected)</a></li>
+            <li><a href="https://complexapp2020.herokuapp.com" >Prayer Blog </a></li>
+
+
+            </ul>
+        </div>
+    );
+    }
+    
+    ReactDOM.render(<App />,
+        document.querySelector('#root'))
